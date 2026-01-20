@@ -29,7 +29,7 @@ export default function App() {
         })
       );
     }, 200);
-
+    return () => clearInterval(interval);
   }, [])
   return (
     <div>
