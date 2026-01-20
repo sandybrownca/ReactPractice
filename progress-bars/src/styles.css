@@ -1,0 +1,73 @@
+/* Reset the browser’s bad habits */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Root container */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  height: 60px;
+  flex-shrink: 0;
+  background: orangered;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* Main row containing nav, main, aside */
+.row {
+  display: flex;
+  flex: 1; /* This is the magic that pushes the footer down */
+  min-height: 0; /* Prevents flex overflow bugs */
+  height: 75vh;
+}
+
+/* Left column */
+nav {
+  width: 100px;
+  flex-shrink: 0;
+  background: #34495e;
+  color: white;
+  padding: 16px;
+}
+
+/* Center column */
+main {
+  flex: 1;
+  background: #ecf0f1;
+  padding: 16px;
+  overflow: auto;
+}
+
+/* Right column */
+aside {
+  width: 100px;
+  flex-shrink: 0;
+  background: #bdc3c7;
+  padding: 16px;
+}
+
+/* Footer */
+footer {
+  height: 100px;
+  flex-shrink: 0;
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
