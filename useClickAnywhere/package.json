@@ -1,7 +1,7 @@
 {
-  "name": "progress-bar",
+  "name": "clickanywhere",
   "version": "1.0.0",
-  "description": "native progress bar animated effect in react",
+  "description": "simple react hook to capture click activity",
   "main": "index.js",
   "dependencies": {
     "react": "18.2.0",

@@ -1,0 +1,1 @@
+Implement a useClickAnywhere hook that handles click events anywhere on the document.
